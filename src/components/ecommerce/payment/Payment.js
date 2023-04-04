@@ -16,21 +16,23 @@ const Payment = () => {
   }, []);
 
   return (
-    <div className="container-payment">
-      <div className="content-payment">
-        <h2>Payment: </h2>
-        {payment.map((service) => (
-          <div className="card-payment" key={service.id}>
-            <p>
-              <strong>Price: </strong>R${service.price}
-            </p>
-          </div>
-        ))}
-        <p>
-          <strong>Total price: {totalPrice}</strong>
-        </p>
+    <>
+      <div className="container-payment">
+        <div className="content-payment">
+          <h2>Payment: </h2>
+          {payment.map((service) => (
+            <div className="card-payment" key={service.id}>
+              <p>
+                <strong>Price: </strong>R${service.price}
+              </p>
+            </div>
+          ))}
+          <p>
+            <strong>Total price: {totalPrice}</strong>
+          </p>
+        </div>
       </div>
-    </div>
+    </>
   );
 };
 

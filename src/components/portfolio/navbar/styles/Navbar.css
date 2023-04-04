@@ -1,9 +1,10 @@
 .navbar-container {
   background-color: #28054b;
   display: grid;
+  min-height: 5vh;
   grid-template-columns: auto auto 1fr auto;
   align-items: center;
-  padding: 10px;
+  padding: 1rem;
 }
 
 .logo {
@@ -20,6 +21,7 @@
   top: 60px;
   left: 0;
   width: 100%;
+  max-width: 100%;
   z-index: 1;
 }
 
@@ -51,7 +53,6 @@
 .icon-menu {
   display: block;
   color: #fff;
-  text-align: right;
   cursor: pointer;
 }
 
@@ -89,15 +90,25 @@
   .icon {
     display: none;
   }
+  .icon-menu {
+    display: none;
+  }
+  .menu-bar {
+    display: none;
+  }
 }
 
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 768px) {
   .navbar-container {
+    width: 100%;
+    max-width: 100%;
+    padding: 0;
     grid-template-columns: auto 1fr auto;
   }
 
   .logo {
     width: 30%;
+    padding: 1rem;
   }
 
   .navbar-link {
@@ -118,45 +129,26 @@
     font-size: 24px;
   }
 
-  @media screen and (min-width: 768px) {
-    .icon-menu {
-      display: none;
-    }
-  }
-
   .icon-cart {
     display: none;
   }
 
   .navbar.show {
     background-color: #28054b;
+    position: absolute;
     width: 100%;
+    max-width: 100%;
     min-height: auto;
     margin: 0;
     padding: 1rem;
   }
 
   .navbar-link:hover {
-    color: #28054b;
+    color: #ffc700;
     padding: 0;
     margin: 0;
   }
-
-  @media only screen and (max-width: 480px) {
-    .logo {
-      width: 30%;
-    }
-
-    .navbar-link {
-      font-size: 12px;
-      padding: 3px;
-    }
-  }
-}
-
-@media only screen and (min-width: 768px) and (max-width: 991px) {
-  .navbar-container {
-    grid-template-columns: auto 1fr auto;
-    box-shadow: none;
+  .menu-bar {
+    display: block;
   }
 }

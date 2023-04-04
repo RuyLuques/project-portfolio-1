@@ -31,7 +31,7 @@
 }
 
 .modal-header button {
-  color: #FFC700;
+  color: #ffc700;
   font-size: 20px;
   font-weight: bold;
   border: none;
@@ -55,7 +55,7 @@
 }
 
 .icon-modal:hover {
-  color: #FFC700;
+  color: #ffc700;
 }
 
 .icon-container {
@@ -88,7 +88,7 @@
 
 .close:hover {
   background-color: transparent;
-  color: #FFC700;
+  color: #ffc700;
 }
 
 @media screen and (max-width: 768px) {

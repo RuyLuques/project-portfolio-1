@@ -10,7 +10,9 @@ const CartItems = ({ cart }) => {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await axios.get("https://2-ruyluques.vercel.app/services");
+        const response = await axios.get(
+          "https://2-ruyluques.vercel.app/services"
+        );
         setItems(response.data);
       } catch (error) {}
     };
@@ -18,13 +20,13 @@ const CartItems = ({ cart }) => {
   }, [cart]);
 
   return (
-    <section>
+    <>
       <div>
         <a className="icon-cart" href="/ecommerce">
           <FontAwesomeIcon icon={faCartShopping} size="2x" />
         </a>
       </div>
-    </section>
+    </>
   );
 };
 

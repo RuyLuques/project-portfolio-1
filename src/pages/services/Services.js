@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
-import Error from "../../components/settings/error/Error";
 import CartAdd from "../../components/ecommerce/cart/CartAdd";
+import Error from "../../components/error/404/Error";
 import "../../components/portfolio/styles/Portfolio.css";
 import "./styles/Services.css";
 
@@ -26,7 +26,7 @@ const Services = () => {
 
   return (
     <>
-      <div>
+      <div id="services">
         <div className="container-services">
           <h2 className="content-title-services">Services</h2>
           <div className="content-services">
@@ -35,9 +35,9 @@ const Services = () => {
                 <img
                   className="card-media"
                   src="https://picsum.photos/100/100"
-                  alt={item.title}
+                  alt="picture of the service types"
                 />
-                <h2>{item.title}</h2>
+                <h3>{item.title}</h3>
                 <p>{item.description}</p>
                 <p>{item.price}</p>
                 <div className="informations">

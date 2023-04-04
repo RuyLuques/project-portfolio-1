@@ -1,7 +1,8 @@
 .container-projects {
-  background-color: #28054B;
+  background-color: #28054b;
   width: 100%;
-  height: 100vh;
+  max-width: 100%;
+  min-height: 100vh;
   padding: 1rem;
 }
 
@@ -9,7 +10,8 @@
   display: grid;
   width: 50%;
   height: auto;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 5rem;
   padding: 20px;
   text-align: center;
   margin: 0 auto;
@@ -18,8 +20,8 @@
 .content-projects {
   background-color: #fff;
   display: grid;
-  width: 50%;
-  height: 55vh;
+  width: 100%;
+  height: auto;
   padding: 2rem;
   border-radius: 2px;
   text-align: center;
@@ -27,56 +29,82 @@
 
 .content-text {
   text-align: center;
-  padding: 2rem;
+  padding: 1rem;
   border-radius: 2px;
 }
 
 .content-text h3 {
-  color: #28054B;
-  font-size: 24px;
+  color: #28054b;
+  font-size: 18px;
 }
 
 .content-text h4 {
-  color: #28054B;
-  font-size: 16px;
+  color: #28054b;
+  font-size: 14px;
 }
 
 .content-midia img {
-  width: 50%;
-  height: 30vh;
+  width: 100%;
+  height: auto;
   margin: 0 auto;
 }
 
 .icon {
-  color: #28054B;
+  color: #28054b;
+}
+
+@media only screen and (max-width: 1024px) {
+  .container-slider {
+    width: 100%;
+    max-width: 100%;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 5rem;
+  }
+
+  .slick-slide {
+    margin: 0 5px;
+  }
+
+  .slick-list {
+    overflow: visible;
+  }
+
+  .slick-prev:before,
+  .slick-next:before {
+    font-size: 20px;
+  }
+
+  .slick-dots {
+    bottom: -30px;
+  }
+
+  .slick-dots li button:before {
+    font-size: 10px;
+  }
 }
 
 @media only screen and (max-width: 768px) {
   .container-slider {
     width: 100%;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 10px;
+    max-width: 100%;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 5rem;
   }
 
-  .content-projects {
-    width: 10%;
-    height: auto;
+  .slick-slide {
+    margin: 0 2px;
   }
 
-  .content-midia img {
-    width: 100%;
-    height: auto;
+  .slick-prev:before,
+  .slick-next:before {
+    font-size: 16px;
   }
 
-  .content-text {
-    padding: 1rem;
+  .slick-dots {
+    bottom: -20px;
   }
 
-  .content-text h3 {
-    font-size: 18px;
-  }
-
-  .content-text h4 {
-    font-size: 14px;
+  .slick-dots li button:before {
+    font-size: 8px;
   }
 }

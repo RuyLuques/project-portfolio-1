@@ -1,5 +1,6 @@
 import React from "react";
 import "./style/BarNavigation.css";
+import "../styles/Portfolio.css"
 
 const BarNavigation = () => {
   return (

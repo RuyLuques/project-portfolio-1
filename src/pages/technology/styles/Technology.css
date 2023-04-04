@@ -1,5 +1,6 @@
 .container-technology {
   width: 100%;
+  max-width: 100%;
   min-height: 100vh;
   padding: 1rem;
 }
@@ -15,12 +16,12 @@
 }
 
 .icon-tech {
-  color: #28054B;
+  color: #28054b;
   margin: 0 auto;
 }
 
 .icon-tech:hover {
-  color: #FFC700;
+  color: #ffc700;
   cursor: pointer;
 }
 
@@ -31,11 +32,11 @@
 
   .content-technology {
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 2rem;
+    gap: 5rem;
   }
 }
 
-@media screen and (max-width: 768px) {
+@media (max-width: 768px) and (min-width: 481px) {
   .content-technology {
     padding-top: 5rem;
   }
@@ -49,6 +50,7 @@
   .content-technology {
     width: 100%;
     padding: 20px;
+    margin-top: 5%;
   }
 
   .icon-tech {

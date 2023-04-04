@@ -1,17 +1,22 @@
 .animation {
+  width: 100%;
+  max-width: 100%;
   border-bottom: 2px solid transparent;
   border-top: none;
   border-left: none;
   border-right: none;
+  overflow: hidden;
 }
 
 .text-animation {
   display: flex;
+  width: 100%;
+  max-width: 100%;
   justify-content: center;
   align-items: center;
   transform: translate(-50%, -50%);
   animation: slideText 20s linear infinite;
-  color: #FFC700;
+  color: #ffc700;
   font-size: 1rem;
   white-space: nowrap;
 }
@@ -31,7 +36,7 @@
     font-size: 1rem;
   }
 }
-  
+
 @keyframes slideText {
   0% {
     transform: translateX(100%);

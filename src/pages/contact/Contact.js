@@ -1,6 +1,9 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
-import Error from "../../components/settings/error/Error";
+import { faPaperPlane } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import Error from "../../components/error/404/Error";
+import "../../components/portfolio/styles/Portfolio.css";
 import "./styles/Contact.css";
 
 function Contact() {
@@ -19,7 +22,7 @@ function Contact() {
     axios
       .post("https://2-ruyluques.vercel.app/contact", formData)
       .then((response) => {
-        setMessage("Your message has been sent!");
+        setMessage("Your message has been sent :)");
       })
       .catch((error) => {
         console.log(error.response.data);
@@ -44,27 +47,26 @@ function Contact() {
 
   return (
     <>
-      <div className="container-form">
-        <form onSubmit={handleSubmit}>
-          <h2>FORM CONTACT</h2>
-          <div className="content-form">
-            <input type="text" placeholder="Your Name" name="name" required />
-            <input
-              type="email"
-              placeholder="Your Email"
-              name="email"
-              required
-            />
-            <input
-              className="message"
-              placeholder="Your Message"
-              name="message"
-              required
-            />
-          </div>
-          <button type="submit">send</button>
-          <p>{message}</p>
-        </form>
+      <div id="contact">
+        <div className="container-form">
+          <form onSubmit={handleSubmit}>
+            <h2 className="content-title">Form Contact</h2>
+            <div className="content-form">
+              <label htmlFor="name">Name:</label>
+              <input type="text" id="name" name="name" required />
+
+              <label htmlFor="email">Email:</label>
+              <input type="email" id="email" name="email" required />
+
+              <label htmlFor="message">Message:</label>
+              <textarea id="message" name="message" required></textarea>
+              <button className="btn-send" type="submit">
+                <FontAwesomeIcon icon={faPaperPlane} size="1x"/>
+              </button>
+            </div>
+            <p>{message}</p>
+          </form>
+        </div>
       </div>
     </>
   );

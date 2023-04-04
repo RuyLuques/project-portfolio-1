@@ -40,54 +40,66 @@ const AboutModal = ({ show, handleClose, children }) => {
   }, []);
 
   return (
-    <div className={`modal ${show ? "show" : ""}`} tabIndex="-1" role="dialog">
-      <div className="modal-dialog modal-dialog-centered" role="document">
-        <div className="modal-content">
-          <div className="modal-header">
-            <button type="button" className="close" onClick={handleClose}>
-              <span>&times;</span>
-            </button>
-          </div>
-          <div className="modal-body d-flex justify-content-center align-items-center">
-            {children}
-            {informations.length > 0 &&
-              informations.map((person, index) => (
-                <div
-                  className="modal-icons"
-                  onMouseOver={() => handleMouseOver(index)}
-                  onMouseOut={() => handleMouseOut(index)}
-                  ref={(ref) => (iconsRef.current[index] = ref)}
-                  key={index}
-                >
-                  <div className="icon-container">
-                    <FontAwesomeIcon className="icon-modal" icon={faUser} />
-                    <span>{person.name}</span>
+    <>
+      <div
+        className={`modal ${show ? "show" : ""}`}
+        tabIndex="-1"
+        role="dialog"
+      >
+        <div className="modal-dialog modal-dialog-centered" role="document">
+          <div className="modal-content">
+            <div className="modal-header">
+              <button type="button" className="close" onClick={handleClose}>
+                <span>&times;</span>
+              </button>
+            </div>
+            <div className="modal-body d-flex justify-content-center align-items-center">
+              {children}
+              {informations.length > 0 &&
+                informations.map((person, index) => (
+                  <div
+                    className="modal-icons"
+                    onMouseOver={() => handleMouseOver(index)}
+                    onMouseOut={() => handleMouseOut(index)}
+                    ref={(ref) => (iconsRef.current[index] = ref)}
+                    key={index}
+                  >
+                    <div className="icon-container">
+                      <FontAwesomeIcon className="icon-modal" icon={faUser} />
+                      <span>{person.name}</span>
+                    </div>
+                    <div className="icon-container">
+                      <FontAwesomeIcon
+                        className="icon-modal"
+                        icon={faMapMarkerAlt}
+                      />
+                      <span>{person.address}</span>
+                    </div>
+                    <div className="icon-container">
+                      <FontAwesomeIcon
+                        className="icon-modal"
+                        icon={faEnvelope}
+                      />
+                      <span>{person.email}</span>
+                    </div>
+                    <div className="icon-container">
+                      <FontAwesomeIcon
+                        className="icon-modal"
+                        icon={faLinkedin}
+                      />
+                      <span>{person.linkedin}</span>
+                    </div>
+                    <div className="icon-container">
+                      <FontAwesomeIcon className="icon-modal" icon={faGithub} />
+                      <span>{person.github}</span>
+                    </div>
                   </div>
-                  <div className="icon-container">
-                    <FontAwesomeIcon
-                      className="icon-modal"
-                      icon={faMapMarkerAlt}
-                    />
-                    <span>{person.address}</span>
-                  </div>
-                  <div className="icon-container">
-                    <FontAwesomeIcon className="icon-modal" icon={faEnvelope} />
-                    <span>{person.email}</span>
-                  </div>
-                  <div className="icon-container">
-                    <FontAwesomeIcon className="icon-modal" icon={faLinkedin} />
-                    <span>{person.linkedin}</span>
-                  </div>
-                  <div className="icon-container">
-                    <FontAwesomeIcon className="icon-modal" icon={faGithub} />
-                    <span>{person.github}</span>
-                  </div>
-                </div>
-              ))}
+                ))}
+            </div>
           </div>
         </div>
       </div>
-    </div>
+    </>
   );
 };
 

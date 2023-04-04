@@ -27,8 +27,6 @@ const Error = () => {
         <div className="container-error">
           <div className="content-error">
             <FontAwesomeIcon icon={faSadTear} size="3x" color="#ffc700" />
-            <FontAwesomeIcon icon={faSadTear} size="3x" color="#ffc700" />
-            <FontAwesomeIcon icon={faSadTear} size="3x" color="#ffc700" />
           </div>
           <h2>ERROR 404</h2>
           <p>

@@ -2,12 +2,12 @@ import React, { useState, useEffect } from "react";
 import axios from "axios";
 import { faBriefcase } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import Error from "../../components/settings/error/Error";
-import "../../components/portfolio/styles/Portfolio.css";
-import "./styles/Projects.css";
+import Error from "../../components/error/404/Error";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import "../../components/portfolio/styles/Portfolio.css";
+import "./styles/Projects.css";
 
 const Projects = () => {
   const [projects, setProjects] = useState([]);
@@ -31,7 +31,7 @@ const Projects = () => {
   const settings = {
     infinite: true,
     speed: 500,
-    slidesToShow: 1, 
+    slidesToShow: 1,
     slidesToScroll: 1,
     responsive: [
       {
@@ -45,19 +45,20 @@ const Projects = () => {
       {
         breakpoint: 768,
         settings: {
-          slidesToShow: 1, 
+          slidesToShow: 1,
           slidesToScroll: 1,
         },
       },
     ],
   };
-  
 
   return (
     <>
       <div id="projects">
         <div className="container-projects">
-          <h2 className="content-title" style={{color: "#fff"}}>Projects</h2>
+          <h2 className="content-title" style={{ color: "#fff" }}>
+            Projects
+          </h2>
           <div className="container-slider">
             <Slider {...settings}>
               {projects.map((item, index) => (

@@ -1,12 +1,13 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
-    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
   text-decoration: none;
   list-style: none;
   border: none;
+  font-family: "Roboto", sans-serif;
 }
 
 body {
@@ -17,16 +18,20 @@ body {
 }
 
 .container {
+  display: flex;
+  flex-direction: column;
   width: 100%;
-  max-width: 1200vw;
+  max-width: 100%;
+  height: auto;
+  margin: 0 auto;
 }
 
 .content-title {
-  color: #28054B;
+  color: #28054b;
   align-items: center;
   text-align: center;
   font-size: 2.5rem;
-  padding: 2rem;
+  padding: 5rem;
 }
 
 .container {
@@ -36,27 +41,8 @@ body {
   height: auto;
 }
 
-@media screen and (max-width: 768px) {
-  .content-title {
-    font-size: 2rem;
-  }
-}
-
-@media screen and (max-width: 768px) {
-  .container {
-    height: auto;
-    padding: 20px;
-  }
-}
-
-@media screen and (min-width: 768px) {
-  .container {
-    height: auto;
-  }
-}
-
 .icon {
-  color: #28054B;
+  color: #28054b;
 }
 
 ::-webkit-scrollbar {
@@ -65,13 +51,19 @@ body {
 }
 
 ::-webkit-scrollbar-thumb {
-  background-color: #28054B;
+  background-color: #28054b;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background-color: #FFC700;
+  background-color: #ffc700;
 }
 
-p{
-  color: #28054B;
+p {
+  color: #28054b;
+}
+
+@media screen and (max-width: 768px) {
+  .content-title {
+    font-size: 2rem;
+  }
 }

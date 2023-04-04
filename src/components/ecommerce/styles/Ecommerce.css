@@ -1,6 +1,26 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+  border: none;
+  font-family: "Roboto", sans-serif;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+
 .container-ecommerce {
   display: flex;
   flex-direction: column;
+  max-width: 100%;
   width: 100%;
   min-height: 100vh;
 }
@@ -9,28 +29,31 @@
   background-color: #fff;
   display: flex;
   flex-direction: column;
+  flex-wrap: wrap;
   width: 100%;
   padding: 1rem;
   gap: 1rem;
 }
 
 .content-products {
-  width: 100%;
+  max-width: 100%;
   box-shadow: 0px 1px 2px #28054b;
 }
 
 .content-payments {
-  width: 100%;
+  max-width: 100%;
   box-shadow: 0px 1px 2px #28054b;
 }
 
 p {
   color: #28054b;
+  font-size: 1.2rem;
 }
 
 .btn-ecommerce {
   color: #fff;
   width: 50%;
+  max-width: 300px; /* adjust as needed */
   padding: 2rem;
   margin: 0 auto;
 }
@@ -39,7 +62,7 @@ p {
   background-color: #28054b;
   color: #fff;
   width: 100%;
-  font-size: 1rem;
+  font-size: 1.2rem;
   font-weight: bold;
   border-radius: 2px;
   cursor: pointer;
@@ -48,7 +71,7 @@ p {
 .btn-ecommerce button:hover {
   background-color: #ffc700;
   color: #28054b;
-  transition: 0.8;
+  transition: 0.8s;
 }
 
 .icon-cartAdd {
@@ -58,7 +81,7 @@ p {
 
 .icon-cartAdd:hover {
   color: #ffc700;
-  transition: 0.8;
+  transition: 0.8s;
 }
 
 .icon-cart {
@@ -67,12 +90,12 @@ p {
 
 .icon-cart:hover {
   color: #ffc700;
-  transition: 0.8;
+  transition: 0.8s;
 }
 
 .msg-error {
   color: red;
-  font-size: 10rem;
+  font-size: 3rem;
   height: 100%;
   width: 100%;
   z-index: 1;
@@ -81,6 +104,7 @@ p {
 @media screen and (max-width: 768px) {
   .container-ecommerce {
     flex-direction: column;
+    align-items: center;
   }
 
   .content-ecommerce {
@@ -89,11 +113,21 @@ p {
 
   .btn-ecommerce {
     width: 100%;
+    max-width: 100%;
+    padding: 1.5rem;
+  }
+
+  p {
+    font-size: 1rem;
   }
 }
 
 @media screen and (max-width: 576px) {
   .btn-ecommerce {
     padding: 1rem;
+  }
+
+  p {
+    font-size: 0.8rem;
   }
 }

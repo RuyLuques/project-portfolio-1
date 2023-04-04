@@ -13,23 +13,25 @@ const TypesTypes = () => {
   }, []);
 
   return (
-    <div className="container-typesServices">
-      <div className="content-typesServices">
-        <h2>Types Types:</h2>
-        <p>
-          <strong>Types: {types.length}</strong>
-        </p>
-        <ul>
-          {types.map((service) => (
-            <div key={service.id}>
-              <p>
-                <strong>{service.title}</strong> - {service.category}
-              </p>
-            </div>
-          ))}
-        </ul>
+    <>
+      <div className="container-typesServices">
+        <div className="content-typesServices">
+          <h2>Types Types:</h2>
+          <p>
+            <strong>Types: {types.length}</strong>
+          </p>
+          <ul>
+            {types.map((service) => (
+              <div key={service.id}>
+                <p>
+                  <strong>{service.title}</strong> - {service.category}
+                </p>
+              </div>
+            ))}
+          </ul>
+        </div>
       </div>
-    </div>
+    </>
   );
 };
 

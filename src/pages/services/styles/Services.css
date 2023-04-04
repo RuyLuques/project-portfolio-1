@@ -1,6 +1,7 @@
 .container-services {
   background-color: #28054b;
   width: 100%;
+  max-width: 100%;
   min-height: 100vh;
   padding: 1rem;
 }
@@ -10,14 +11,9 @@
   width: 100%;
   height: auto;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 2rem;
+  gap: 5rem;
+  padding: 5rem;
   margin: 0 auto;
-}
-
-@media screen and (min-width: 576px) {
-  .content-services {
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  }
 }
 
 .content-title-services {
@@ -30,12 +26,12 @@
 
 .card-services {
   background-color: #fff;
-  width: 80%;
+  width: 100%;
   height: auto;
-  overflow: hidden;
-  border-radius: 2px;
   margin: 0 auto;
+  overflow: hidden;
   padding: 1rem;
+  border-radius: 2px;
 }
 
 .card-services img {
@@ -44,20 +40,20 @@
   object-fit: cover;
 }
 
-.card-services h2 {
+.card-services h3 {
   color: #28054b;
-  height: 16%;
-  font-size: 24px;
-  text-align: center;
   margin: 0;
-  border-radius: 2px;
+  padding: 0.2rem;
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-align: justify;
 }
 
 .card-services p {
   color: #28054b;
   margin: 0;
   padding: 0.2rem;
-  font-size: 16px;
+  font-size: 1rem;
   font-weight: bold;
   text-align: justify;
 }
@@ -66,17 +62,18 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 10px;
+  padding: 1rem;
 }
 
 .card-services .informations span {
   background-color: #ffc700;
   width: 40%;
-  font-size: 14px;
+  font-size: 1rem;
+  padding: 1rem;
   font-weight: bold;
-  border-radius: 50px;
-  animation: blinking 1s infinite;
   text-align: center;
+  border-radius: 2px;
+  animation: blinking 1s infinite;
 }
 
 @keyframes blinking {
@@ -88,5 +85,91 @@
   }
   100% {
     color: #28054b;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .card-services {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    max-height: 100%;
+    padding: 1rem;
+  }
+
+  .card-services img {
+    height: 50%;
+  }
+
+  .card-services h3 {
+    font-size: 1.5rem;
+    padding: 1rem;
+  }
+
+  .card-services p {
+    font-size: 1.2rem;
+    padding: 1rem;
+  }
+
+  .card-services .informations {
+    width: 100%;
+    height: 25%;
+    font-size: 1.2rem;
+    padding: 2rem;
+  }
+
+  .card-services .informations span {
+    width: 50%;
+    font-size: 0.8rem;
+    padding: 1rem;
+  }
+
+  .content-title-services {
+    font-size: 1.5rem;
+    padding: 1rem 0;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .content-services {
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    padding: 0;
+    gap: 5rem;
+  }
+
+  .card-services {
+    padding: 1rem;
+  }
+
+  .card-services img {
+    height: 50%;
+  }
+
+  .card-services h3 {
+    font-size: 3rem;
+    padding: 1rem;
+  }
+
+  .card-services p {
+    font-size: 2rem;
+    padding: 1rem;
+  }
+
+  .card-services .informations {
+    width: 100%;
+    height: 25%;
+    font-size: 2rem;
+    padding: 2rem;
+  }
+
+  .card-services .informations span {
+    width: 50%;
+    font-size: 1.5rem;
+    padding: 1rem;
+  }
+
+  .content-title-services {
+    font-size: 1.5rem;
+    padding: 1rem 0;
   }
 }
