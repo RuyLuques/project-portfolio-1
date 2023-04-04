@@ -1,0 +1,24 @@
+.container-evaluations {
+  display: grid;
+  width: 100%;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-gap: 1rem;
+  padding: 1rem;
+}
+
+.content-evaluations {
+  width: 100%;
+  padding: 1rem;
+  box-shadow: 0px 1px 1px #28054b;
+}
+.content-evaluations h2 {
+  color: #28054b;
+  font-size: 1rem;
+  text-align: left;
+}
+
+@media screen and (max-width: 768px) {
+  .container-evaluations {
+    grid-template-columns: 1fr;
+  }
+}

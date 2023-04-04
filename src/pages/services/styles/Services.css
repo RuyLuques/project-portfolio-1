@@ -1,0 +1,92 @@
+.container-services {
+  background-color: #28054b;
+  width: 100%;
+  min-height: 100vh;
+  padding: 1rem;
+}
+
+.content-services {
+  display: grid;
+  width: 100%;
+  height: auto;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  margin: 0 auto;
+}
+
+@media screen and (min-width: 576px) {
+  .content-services {
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  }
+}
+
+.content-title-services {
+  color: #fff;
+  align-items: center;
+  text-align: center;
+  font-size: 2.5rem;
+  padding: 2rem;
+}
+
+.card-services {
+  background-color: #fff;
+  width: 80%;
+  height: auto;
+  overflow: hidden;
+  border-radius: 2px;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+.card-services img {
+  width: 100%;
+  height: 60%;
+  object-fit: cover;
+}
+
+.card-services h2 {
+  color: #28054b;
+  height: 16%;
+  font-size: 24px;
+  text-align: center;
+  margin: 0;
+  border-radius: 2px;
+}
+
+.card-services p {
+  color: #28054b;
+  margin: 0;
+  padding: 0.2rem;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: justify;
+}
+
+.card-services .informations {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+}
+
+.card-services .informations span {
+  background-color: #ffc700;
+  width: 40%;
+  font-size: 14px;
+  font-weight: bold;
+  border-radius: 50px;
+  animation: blinking 1s infinite;
+  text-align: center;
+}
+
+@keyframes blinking {
+  10% {
+    color: #fff;
+  }
+  50% {
+    color: #28054b;
+  }
+  100% {
+    color: #28054b;
+  }
+}

@@ -1,0 +1,61 @@
+.container-experience {
+  width: 100%;
+  min-height: 100vh;
+  padding: 1rem;
+}
+
+.content-experience {
+  display: grid;
+  width: 80%;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 10rem;
+  margin: 0 auto;
+}
+
+.card-experience {
+  padding: 20px;
+  border-radius: 2px;
+  text-align: center;
+  border-radius: 2px;
+  box-shadow: 0px 1px 5px #28054B;
+}
+
+.icon {
+  color: #28054B;
+  margin: 0 auto;
+}
+
+.card-experience h2 {
+  color: #28054B;
+  margin-bottom: 10px;
+  font-size: 1.5rem;
+}
+
+.card-experience p {
+  color: #28054B;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+@media (max-width: 768px) {
+  .container-experience {
+    height: auto;
+  }
+
+  .content-experience {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+  }
+
+  .card-experience {
+    padding: 10px;
+  }
+
+  .card-experience h2 {
+    font-size: 1.2rem;
+  }
+
+  .card-experience p {
+    font-size: 0.9rem;
+  }
+}

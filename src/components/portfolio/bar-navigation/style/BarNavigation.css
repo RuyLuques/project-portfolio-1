@@ -1,0 +1,42 @@
+.animation {
+  border-bottom: 2px solid transparent;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+}
+
+.text-animation {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: translate(-50%, -50%);
+  animation: slideText 20s linear infinite;
+  color: #FFC700;
+  font-size: 1rem;
+  white-space: nowrap;
+}
+
+@media screen and (max-width: 768px) {
+  .animation {
+    background-color: #fff;
+  }
+
+  .text-animation {
+    font-size: 1.5rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .text-animation {
+    font-size: 1rem;
+  }
+}
+  
+@keyframes slideText {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}

@@ -1,0 +1,99 @@
+.container-ecommerce {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  min-height: 100vh;
+}
+
+.content-ecommerce {
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 1rem;
+  gap: 1rem;
+}
+
+.content-products {
+  width: 100%;
+  box-shadow: 0px 1px 2px #28054b;
+}
+
+.content-payments {
+  width: 100%;
+  box-shadow: 0px 1px 2px #28054b;
+}
+
+p {
+  color: #28054b;
+}
+
+.btn-ecommerce {
+  color: #fff;
+  width: 50%;
+  padding: 2rem;
+  margin: 0 auto;
+}
+
+.btn-ecommerce button {
+  background-color: #28054b;
+  color: #fff;
+  width: 100%;
+  font-size: 1rem;
+  font-weight: bold;
+  border-radius: 2px;
+  cursor: pointer;
+}
+
+.btn-ecommerce button:hover {
+  background-color: #ffc700;
+  color: #28054b;
+  transition: 0.8;
+}
+
+.icon-cartAdd {
+  color: #28054b;
+  cursor: pointer;
+}
+
+.icon-cartAdd:hover {
+  color: #ffc700;
+  transition: 0.8;
+}
+
+.icon-cart {
+  color: #fff;
+}
+
+.icon-cart:hover {
+  color: #ffc700;
+  transition: 0.8;
+}
+
+.msg-error {
+  color: red;
+  font-size: 10rem;
+  height: 100%;
+  width: 100%;
+  z-index: 1;
+}
+
+@media screen and (max-width: 768px) {
+  .container-ecommerce {
+    flex-direction: column;
+  }
+
+  .content-ecommerce {
+    flex-direction: column;
+  }
+
+  .btn-ecommerce {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .btn-ecommerce {
+    padding: 1rem;
+  }
+}

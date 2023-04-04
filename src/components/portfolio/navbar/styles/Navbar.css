@@ -1,0 +1,162 @@
+.navbar-container {
+  background-color: #28054b;
+  display: grid;
+  grid-template-columns: auto auto 1fr auto;
+  align-items: center;
+  padding: 10px;
+}
+
+.logo {
+  width: 30%;
+}
+
+.navbar {
+  display: none;
+}
+
+.navbar.show {
+  display: block;
+  position: fixed;
+  top: 60px;
+  left: 0;
+  width: 100%;
+  z-index: 1;
+}
+
+.navbar ul {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  margin: 0 auto;
+}
+
+.navbar li {
+  margin-bottom: 10px;
+}
+
+.navbar-link {
+  display: block;
+  font-size: 16px;
+  color: #fff;
+  text-decoration: none;
+}
+
+.navbar-link:hover {
+  color: #ffc700;
+  transition: 1s;
+}
+
+.icon-menu {
+  display: block;
+  color: #fff;
+  text-align: right;
+  cursor: pointer;
+}
+
+@media only screen and (min-width: 768px) {
+  .navbar-container {
+    grid-template-columns: auto 1fr auto;
+  }
+
+  .navbar {
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .navbar.show {
+    position: static;
+    box-shadow: none;
+    z-index: 0;
+    width: auto;
+    background-color: transparent;
+  }
+
+  .navbar ul {
+    flex-direction: row;
+  }
+
+  .navbar li {
+    margin-left: 20px;
+    margin-bottom: 0;
+  }
+
+  .navbar-link {
+    padding: 10px 15px;
+  }
+
+  .icon {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .navbar-container {
+    grid-template-columns: auto 1fr auto;
+  }
+
+  .logo {
+    width: 30%;
+  }
+
+  .navbar-link {
+    font-size: 10px;
+    padding: 2px;
+  }
+
+  .navbar.show {
+    top: 50px;
+  }
+
+  .icon-menu {
+    position: absolute;
+    color: #fff;
+    top: 0;
+    right: 0;
+    padding: 20px;
+    font-size: 24px;
+  }
+
+  @media screen and (min-width: 768px) {
+    .icon-menu {
+      display: none;
+    }
+  }
+
+  .icon-cart {
+    display: none;
+  }
+
+  .navbar.show {
+    background-color: #28054b;
+    width: 100%;
+    min-height: auto;
+    margin: 0;
+    padding: 1rem;
+  }
+
+  .navbar-link:hover {
+    color: #28054b;
+    padding: 0;
+    margin: 0;
+  }
+
+  @media only screen and (max-width: 480px) {
+    .logo {
+      width: 30%;
+    }
+
+    .navbar-link {
+      font-size: 12px;
+      padding: 3px;
+    }
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .navbar-container {
+    grid-template-columns: auto 1fr auto;
+    box-shadow: none;
+  }
+}
