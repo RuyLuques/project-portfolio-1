@@ -7,7 +7,7 @@ const TypesTypes = () => {
   const [types, setTypes] = useState([]);
 
   useEffect(() => {
-    axios.get("http://localhost:4000/services").then((response) => {
+    axios.get("https://2-ruyluques.vercel.app/services").then((response) => {
       setTypes(response.data);
     });
   }, []);

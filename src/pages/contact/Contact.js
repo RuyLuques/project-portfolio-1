@@ -17,7 +17,7 @@ function Contact() {
       message: form.message.value,
     };
     axios
-      .post("http://localhost:4000/contact", formData)
+      .post("https://2-ruyluques.vercel.app/contact", formData)
       .then((response) => {
         setMessage("Your message has been sent!");
       })
@@ -29,7 +29,7 @@ function Contact() {
 
   useEffect(() => {
     axios
-      .get("http://localhost:4000/contact")
+      .get("https://2-ruyluques.vercel.app/contact")
       .then((response) => {
         setData(response.data);
       })

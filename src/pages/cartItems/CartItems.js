@@ -19,7 +19,7 @@ const CartItems = () => {
 
   const handleDeleteItem = async (id) => {
     try {
-      await axios.delete(`http://localhost:4000/services/${id}`);
+      await axios.delete(`https://2-ruyluques.vercel.app/services/${id}`);
       setItems((prevItems) => {
         const index = prevItems.findIndex((item) => item.id === id);
         if (index !== -1) {
@@ -37,7 +37,7 @@ const CartItems = () => {
   useEffect(() => {
     const fetchCartItems = async () => {
       try {
-        const response = await axios.get("http://localhost:4000/services");
+        const response = await axios.get("https://2-ruyluques.vercel.app/services");
         const itemsWithQuantity = response.data.reduce((acc, item) => {
           const existingItem = acc.find((i) => i.id === item.id);
           if (existingItem) {

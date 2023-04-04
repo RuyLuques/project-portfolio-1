@@ -13,7 +13,7 @@ const CartAdd = ({ serviceId }) => {
     const fetchService = async () => {
       try {
         const response = await axios.get(
-          `http://localhost:4000/services/items`
+          `https://2-ruyluques.vercel.app/services/items`
         );
         const foundService = response.data.find(
           (item) => item.id === serviceId
@@ -31,7 +31,7 @@ const CartAdd = ({ serviceId }) => {
       setIsAddingToCart(true);
       try {
         const response = await axios.post(
-          "http://localhost:4000/services",
+          "https://2-ruyluques.vercel.app/services",
           service
         );
         setIsAddingToCart(false);

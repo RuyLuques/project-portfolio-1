@@ -15,7 +15,7 @@ const Projects = () => {
 
   useEffect(() => {
     axios
-      .get(`http://localhost:4000/projects`)
+      .get(`https://2-ruyluques.vercel.app/projects`)
       .then((response) => {
         setProjects(Object.values(response.data));
       })
@@ -66,7 +66,7 @@ const Projects = () => {
                     {item.video ? (
                       <video
                         className="img"
-                        src={`http://localhost:4000/uploads/videos/${item.video}`}
+                        src={`https://2-ruyluques.vercel.app/uploads/videos/${item.video}`}
                         type="video/mp4"
                         controls
                       >
@@ -75,7 +75,7 @@ const Projects = () => {
                     ) : (
                       <img
                         className="img"
-                        src={`http://localhost:4000/projects/img/${item.image}`}
+                        src={`https://2-ruyluques.vercel.app/projects/img/${item.image}`}
                         alt={item.title}
                       />
                     )}

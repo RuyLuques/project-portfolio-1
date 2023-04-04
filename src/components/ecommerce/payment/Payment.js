@@ -8,7 +8,7 @@ const Payment = () => {
   const [totalPrice, setTotalPrice] = useState(0);
 
   useEffect(() => {
-    axios.get("http://localhost:4000/services").then((response) => {
+    axios.get("https://2-ruyluques.vercel.app/services").then((response) => {
       setPayment(response.data);
       const total = response.data.reduce((acc, curr) => acc + curr.price, 0);
       setTotalPrice(total);

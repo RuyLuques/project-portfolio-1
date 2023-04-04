@@ -12,7 +12,7 @@ const Education = () => {
 
   useEffect(() => {
     axios
-      .get(`http://localhost:4000/education`)
+      .get(`https://2-ruyluques.vercel.app/education`)
       .then((response) => {
         setEducation(Object.values(response.data));
       })

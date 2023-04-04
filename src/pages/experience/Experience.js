@@ -12,7 +12,7 @@ const Experience = () => {
 
   useEffect(() => {
     axios
-      .get(`http://localhost:4000/experience`)
+      .get(`https://2-ruyluques.vercel.app/experience`)
       .then((response) => {
         setExperience(Object.values(response.data));
       })

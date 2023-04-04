@@ -13,7 +13,7 @@ const Skills = () => {
 
   useEffect(() => {
     axios
-      .get(`http://localhost:4000/skills`)
+      .get(`https://2-ruyluques.vercel.app/skills`)
       .then((response) => {
         setSkills(Object.values(response.data));
         setIsFlipped(new Array(Object.values(response.data).length).fill(false));

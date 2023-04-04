@@ -11,7 +11,7 @@ const Services = () => {
 
   useEffect(() => {
     axios
-      .get(`http://localhost:4000/services/items`)
+      .get(`https://2-ruyluques.vercel.app/services/items`)
       .then((response) => {
         setServices(Object.values(response.data));
       })

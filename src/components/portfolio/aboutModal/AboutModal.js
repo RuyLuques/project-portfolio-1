@@ -27,7 +27,7 @@ const AboutModal = ({ show, handleClose, children }) => {
 
   useEffect(() => {
     axios
-      .get("http://localhost:4000/informations")
+      .get("https://2-ruyluques.vercel.app/informations")
       .then((response) => {
         setInformations(response.data);
       })
