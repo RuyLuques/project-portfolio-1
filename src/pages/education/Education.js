@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
-import { faPeopleGroup } from "@fortawesome/free-solid-svg-icons";
+import { faBusinessTime } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Error from "../../components/error/404/Error";
 import "../../components/portfolio/styles/Portfolio.css";
@@ -9,6 +9,7 @@ import "./style/Education.css";
 const Education = () => {
   const [education, setEducation] = useState([]);
   const [error, setError] = useState(false);
+  const [showIndex, setShowIndex] = useState(-1); // add state for displaying info of specific item
 
   useEffect(() => {
     axios
@@ -33,14 +34,27 @@ const Education = () => {
           <div className="content-education">
             {education.map((item, index) => (
               <div className="card-education" key={index}>
-                <FontAwesomeIcon
-                  className="icon"
-                  icon={faPeopleGroup}
-                  size="3x"
-                />
-                <h2>{item.title}</h2>
-                <p>{item.description}</p>
-                <p><strong>{item.duration}</strong></p>
+                <div className="card-education-header">
+                  <FontAwesomeIcon
+                    className="icon-education"
+                    icon={faBusinessTime}
+                    size="2x"
+                    onClick={() =>
+                      setShowIndex(showIndex === index ? -1 : index)
+                    }
+                  />
+                  <h2>{item.title}</h2>
+                  <p>{item.description}</p>
+                  <div className="card-education-body">
+                    {showIndex === index && (
+                      <>
+                        <p>
+                          <strong>{item.duration}</strong>
+                        </p>
+                      </>
+                    )}
+                  </div>
+                </div>
               </div>
             ))}
           </div>
