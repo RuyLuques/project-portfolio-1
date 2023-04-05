@@ -40,6 +40,7 @@ const Education = () => {
                 />
                 <h2>{item.title}</h2>
                 <p>{item.description}</p>
+                <p><strong>{item.duration}</strong></p>
               </div>
             ))}
           </div>
