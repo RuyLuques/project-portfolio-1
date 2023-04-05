@@ -11,28 +11,42 @@
   height: 100%;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 5rem;
-  padding: 5rem;
   margin: 0 auto;
+  padding: 1rem;
 }
 
 .card-experience {
   width: 100%;
   height: 100%;
-  padding: 5rem;
+  min-height: 300px;
   text-align: center;
   border-radius: 2px;
   box-shadow: 0px 1px 5px #28054b;
 }
 
-.icon {
+.img-experience {
+  width: 100%;
+  max-width: 100%;
+  height: 100%;
+  max-height: 200px;
+  object-fit: cover;
+}
+
+.icon-experience {
   color: #28054b;
-  margin: 0 auto;
+  padding: 1rem;
+  cursor: pointer;
+}
+
+.icon-experience:hover {
+  color: #ffc700;
 }
 
 .card-experience h2 {
   color: #28054b;
   margin-bottom: 10px;
   font-size: 1.5rem;
+  padding: 1rem;
 }
 
 .card-experience p {
