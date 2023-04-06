@@ -37,7 +37,7 @@ const About = () => {
             <div className="content-img">
               <img
                 className="card-img"
-                src="https://picsum.photos/100/100"
+                src={`https://2-ruyluques.vercel.app/experience/img/ruyluques.svg`}
                 alt={item.image}
               />
             </div>
