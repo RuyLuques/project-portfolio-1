@@ -16,9 +16,9 @@ const TypesTypes = () => {
     <>
       <div className="container-typesServices">
         <div className="content-typesServices">
-          <h2>Types Types:</h2>
+          <h2>Types:</h2>
           <p>
-            <strong>Types: {types.length}</strong>
+            <strong>Total: {types.length}</strong>
           </p>
           <ul>
             {types.map((service) => (
