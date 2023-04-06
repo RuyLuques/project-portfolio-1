@@ -17,7 +17,7 @@
   transform: translate(-50%, -50%);
   animation: slideText 20s linear infinite;
   color: #ffc700;
-  font-size: 1rem;
+  font-size: 1em;
   white-space: nowrap;
 }
 
@@ -27,13 +27,13 @@
   }
 
   .text-animation {
-    font-size: 1.5rem;
+    font-size: 1.5em;
   }
 }
 
 @media screen and (max-width: 480px) {
   .text-animation {
-    font-size: 1rem;
+    font-size: 1em;
   }
 }
 

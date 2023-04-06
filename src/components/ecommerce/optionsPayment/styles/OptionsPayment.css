@@ -14,7 +14,7 @@
 
 .content-title-optionsPayment {
   color: #28054b;
-  font-size: 1rem;
+  font-size: 1em;
   margin: 0;
 }
 
@@ -43,7 +43,7 @@ form {
   }
 
   .content-title-optionsPayment {
-    font-size: 0.8rem;
+    font-size: 0.8em;
   }
 
   form {
@@ -57,6 +57,6 @@ form {
   }
 
   .options {
-    font-size: 0.8rem;
+    font-size: 0.8em;
   }
 }

@@ -55,13 +55,13 @@
 .card-education h2 {
   color: #28054b;
   margin-bottom: 10px;
-  font-size: 1.5rem;
+  font-size: 1.5em;
   padding: 1rem;
 }
 
 .card-education p {
   color: #28054b;
-  font-size: 1rem;
+  font-size: 1em;
   line-height: 1.5;
 }
 
@@ -83,15 +83,15 @@
   }
 
   .card-education h2 {
-    font-size: 1.2rem;
+    font-size: 1.2em;
   }
 
   .card-education p {
-    font-size: 0.9rem;
+    font-size: 0.9em;
   }
 
   .icon {
-    font-size: 2rem;
+    font-size: 2em;
   }
 }
 
@@ -103,14 +103,14 @@
   }
 
   .card-education h2 {
-    font-size: 1rem;
+    font-size: 1em;
   }
 
   .card-education p {
-    font-size: 0.8rem;
+    font-size: 0.8em;
   }
 
   .icon {
-    font-size: 1.5rem;
+    font-size: 1.5em;
   }
 }

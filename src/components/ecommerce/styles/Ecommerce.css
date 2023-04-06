@@ -49,7 +49,7 @@ body {
 
 p {
   color: #28054b;
-  font-size: 1.2rem;
+  font-size: 1.2em;
 }
 
 .btn-ecommerce {
@@ -64,7 +64,7 @@ p {
   background-color: #28054b;
   color: #fff;
   width: 100%;
-  font-size: 1.2rem;
+  font-size: 1.2em;
   font-weight: bold;
   border-radius: 2px;
   cursor: pointer;
@@ -97,7 +97,7 @@ p {
 
 .msg-error {
   color: red;
-  font-size: 3rem;
+  font-size: 2em;
   height: 100%;
   width: 100%;
   z-index: 1;
@@ -120,7 +120,7 @@ p {
   }
 
   p {
-    font-size: 1rem;
+    font-size: 1em;
   }
 }
 
@@ -130,6 +130,6 @@ p {
   }
 
   p {
-    font-size: 0.8rem;
+    font-size: 0.8em;
   }
 }
