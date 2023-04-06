@@ -1,4 +1,4 @@
-#Tecnologias
+##Tecnologias
 - ReactJS
 - JS, CSS e HTML
 - Nodejs + express
