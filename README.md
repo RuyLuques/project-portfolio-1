@@ -1,4 +1,13 @@
-<h1>Tecnologias</h1>
+<h1>
+ 	<p>
+    <strong>
+    Olá, bem vindo(a) ao código do meu portfólio!
+    Desenvolvi esse projeto para desmonstrar minhas habilidades técnicas e conseguir me recolocar no mercado de trabalho (#sofrirLayoff). Enão uma maneira de chamar   atenção dos recrutadores foi desenvolver esse projeto cuidadosamente e com muito amor... :)
+    </strong>
+  </p>
+</h1>
+
+<h2>Tecnologias</h2>
 <ul>
   <li>ReactJS</li>
   <li>JS, CSS e HTML</li>
@@ -6,7 +15,7 @@
   <li>Responsivo (web e mobile)</li>
 </ul>
 
-<h2>Para acessar o projeto você deve utilizar o GIT:</h2>
+<h3>Para acessar o projeto você deve utilizar o GIT:</h3>
 <ul>
   <li>No terminal: git clone + link do repositório</li>
   <li>No terminal: npm i / npm install (instalar todas as dependências do projeto)</li>
