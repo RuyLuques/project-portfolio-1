@@ -132,7 +132,8 @@
 
 @media screen and (max-width: 768px) {
   .content-services {
-    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    width: 100%;
     padding: 0;
     gap: 5rem;
   }
@@ -157,14 +158,14 @@
 
   .card-services .informations {
     width: 100%;
-    height: 25%;
-    font-size: 2rem;
+    height: 10%;
+    font-size: 1.5rem;
     padding: 2rem;
   }
 
   .card-services .informations span {
     width: 50%;
-    font-size: 1.5rem;
+    font-size: 1rem;
     padding: 1rem;
   }
 
