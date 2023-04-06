@@ -1,11 +1,8 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
-import { faBriefcase } from "@fortawesome/free-solid-svg-icons";
+import { faLaptopCode } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Error from "../../components/error/404/Error";
-import Slider from "react-slick";
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
 import "../../components/portfolio/styles/Portfolio.css";
 import "./styles/Projects.css";
 
@@ -28,71 +25,25 @@ const Projects = () => {
     return <Error />;
   }
 
-  const settings = {
-    infinite: true,
-    speed: 500,
-    slidesToShow: 1,
-    slidesToScroll: 1,
-    responsive: [
-      {
-        breakpoint: 1024,
-        settings: {
-          slidesToShow: 2,
-          slidesToScroll: 1,
-          infinite: true,
-        },
-      },
-      {
-        breakpoint: 768,
-        settings: {
-          slidesToShow: 1,
-          slidesToScroll: 1,
-        },
-      },
-    ],
-  };
-
   return (
     <>
       <div id="projects">
         <div className="container-projects">
-          <h2 className="content-title" style={{ color: "#fff" }}>
-            Projects
-          </h2>
-          <div className="container-slider">
-            <Slider {...settings}>
-              {projects.map((item, index) => (
-                <div className="content-projects" key={index}>
-                  <div className="content-midia">
-                    {item.video ? (
-                      <video
-                        className="img"
-                        src={`https://2-ruyluques.vercel.app/uploads/videos/${item.video}`}
-                        type="video/mp4"
-                        controls
-                      >
-                        Your browser does not support the video tag.
-                      </video>
-                    ) : (
-                      <img
-                        className="img"
-                        src={`https://2-ruyluques.vercel.app/projects/img/${item.image}`}
-                        alt={item.title}
-                      />
-                    )}
-                    <div className="content-text">
-                      <FontAwesomeIcon
-                        className="icon"
-                        icon={faBriefcase}
-                        size="3x"
-                      />
-                      <h3 className="title">{item.title}</h3>
-                      <h4 className="description">{item.description}</h4>
-                    </div>
-                  </div>
-                </div>
-              ))}
-            </Slider>
+          <h2 className="content-title">Projects</h2>
+          <div className="content-projects">
+            {projects.map((item, index) => (
+              <div className="card-projects" key={index}>
+                <img
+                  className="img-projects"
+                  src={`https://2-ruyluques.vercel.app/projects/img/${item.image}`}
+                  alt={item.alt}
+                />
+                <h2>{item.title}</h2>
+                <p>
+                  <strong>{item.description}</strong>
+                </p>
+              </div>
+            ))}
           </div>
         </div>
       </div>

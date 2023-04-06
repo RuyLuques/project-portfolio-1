@@ -9,7 +9,7 @@ import "./styles/Experience.css";
 const Experience = () => {
   const [experience, setExperience] = useState([]);
   const [error, setError] = useState(false);
-  const [showIndex, setShowIndex] = useState(-1); // add state for displaying info of specific item
+  const [showIndex, setShowIndex] = useState(-1); 
 
   useEffect(() => {
     axios
