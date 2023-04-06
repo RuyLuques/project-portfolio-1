@@ -1,6 +1,6 @@
 <h1>Olá, bem vindo(a) ao código do meu portfólio!</h1>
  <p>
-Desenvolvi esse projeto para desmonstrar minhas habilidades técnicas e conseguir me recolocar no mercado de trabalho (#sofrirLayoff). Enão uma maneira de chamar   atenção dos recrutadores foi desenvolver esse projeto cuidadosamente e com muito amor... :)
+Desenvolvi esse projeto para desmonstrar minhas habilidades técnicas e conseguir me recolocar no mercado de trabalho (#sofrirLayoff). E uma maneira de chamar   atenção dos recrutadores foi desenvolver esse projeto cuidadosamente e com muito amor... :)
  </p>
 
 <h2>Tecnologias</h2>
