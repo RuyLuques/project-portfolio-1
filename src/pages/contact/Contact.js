@@ -53,10 +53,10 @@ function Contact() {
             <h2 className="content-title">Form Contact</h2>
             <div className="content-form">
               <label htmlFor="name">Name:</label>
-              <input type="text" id="name" name="name" required />
+              <input className="input" type="text" id="name" name="name" required />
 
               <label htmlFor="email">Email:</label>
-              <input type="email" id="email" name="email" required />
+              <input className="input" type="email" id="email" name="email" required />
 
               <label htmlFor="message">Message:</label>
               <textarea id="message" name="message" required></textarea>

@@ -29,8 +29,7 @@ form {
   font-weight: bold;
 }
 
-input[type="text"],
-input[type="email"] {
+input {
   background-color: #28054b3a;
   color: #28054b;
   font-size: 1em;
