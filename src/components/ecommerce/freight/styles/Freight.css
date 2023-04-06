@@ -32,4 +32,8 @@
   .container-freight {
     grid-template-columns: 1fr;
   }
+
+  .content-freight input {
+    width: 50%;
+  }
 }

@@ -10,6 +10,7 @@ import "../styles/Portfolio.css";
 const Navbar = () => {
   const [showMenu, setShowMenu] = useState(false);
   const menuRef = useRef(null);
+  const iconRef = useRef(null);
 
   const handleToggleMenu = () => {
     setShowMenu(!showMenu);
@@ -22,7 +23,12 @@ const Navbar = () => {
 
   useEffect(() => {
     const handleClickOutsideMenu = (event) => {
-      if (menuRef.current && !menuRef.current.contains(event.target)) {
+      if (
+        menuRef.current &&
+        !menuRef.current.contains(event.target) &&
+        iconRef.current &&
+        !iconRef.current.contains(event.target)
+      ) {
         setShowMenu(false);
       }
     };
@@ -86,7 +92,10 @@ const Navbar = () => {
             </li>
           </ul>
         </div>
-        <div className={`icon ${showMenu ? "hide" : ""} show-menu`}>
+        <div
+          className={`icon ${showMenu ? "hide" : ""} show-menu`}
+          ref={iconRef}
+        >
           <span onClick={handleToggleMenu}>
             <FontAwesomeIcon className="icon-menu" icon={faBars} size="2x" />
           </span>

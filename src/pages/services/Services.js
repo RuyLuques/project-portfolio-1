@@ -32,18 +32,21 @@ const Services = () => {
           <div className="content-services">
             {services.map((item, index) => (
               <div className="card-services" key={index}>
-                <div className="card-media"></div>
+                <div className="card-media">
+                  <h3>ECOMMERCE</h3>
+                </div>
                 <div className="card-content">
                   <h4>{item.title}</h4>
                   <p>{item.description}</p>
                   <p>
                     <strong>R$: {item.price}</strong>
                   </p>
-                  <div className="informations">
+                 
+                </div>
+                <div className="informations">
                     <CartAdd serviceId={item.id} />
                     <span>Promoção</span>
                   </div>
-                </div>
               </div>
             ))}
           </div>

@@ -27,7 +27,6 @@ const Payment = () => {
             </span>
           </h2>
           {isOpen && (
-            <form>
               <div className="content-options">
                 <input
                   type="radio"
@@ -57,7 +56,6 @@ const Payment = () => {
                   PayPal
                 </label>
               </div>
-            </form>
           )}
         </div>
       </div>
