@@ -32,17 +32,17 @@ const Services = () => {
           <div className="content-services">
             {services.map((item, index) => (
               <div className="card-services" key={index}>
-                <img
-                  className="card-media"
-                  src="https://picsum.photos/100/100"
-                  alt="picture of the service types"
-                />
-                <h3>{item.title}</h3>
-                <p>{item.description}</p>
-                <p>{item.price}</p>
-                <div className="informations">
-                  <CartAdd serviceId={item.id} />
-                  <span>Promoção</span>
+                <div className="card-media"></div>
+                <div className="card-content">
+                  <h4>{item.title}</h4>
+                  <p>{item.description}</p>
+                  <p>
+                    <strong>R$: {item.price}</strong>
+                  </p>
+                  <div className="informations">
+                    <CartAdd serviceId={item.id} />
+                    <span>Promoção</span>
+                  </div>
                 </div>
               </div>
             ))}
