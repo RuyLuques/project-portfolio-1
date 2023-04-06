@@ -41,17 +41,14 @@ body {
   height: auto;
 }
 
-.icon {
-  color: #28054b;
-}
-
 ::-webkit-scrollbar {
-  width: 3px;
-  background-color: #fff;
+  width: 5px;
+  background-color: #28054b;
 }
 
 ::-webkit-scrollbar-thumb {
-  background-color: #28054b;
+  background-color: #fff;
+  border-radius: 10px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
