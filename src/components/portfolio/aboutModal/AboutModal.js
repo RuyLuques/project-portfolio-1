@@ -99,19 +99,26 @@ const AboutModal = ({ show, handleClose, children }) => {
                       <span>{person.email}</span>
                     </div>
                     <div className="icon-container">
-                      <FontAwesomeIcon
-                        className="icon-modal"
-                        icon={faLinkedin}
-                        size="2x"
-                      />
+                      <a
+                        href="https://www.linkedin.com/in/ruyluques/"
+                        target="_blank"
+                      >
+                        <FontAwesomeIcon
+                          className="icon-modal"
+                          icon={faLinkedin}
+                          size="2x"
+                        />
+                      </a>
                       <span>{person.linkedin}</span>
                     </div>
                     <div className="icon-container">
-                      <FontAwesomeIcon
-                        className="icon-modal"
-                        icon={faGithub}
-                        size="2x"
-                      />
+                      <a href="https://github.com/RuyLuques" target="_blank">
+                        <FontAwesomeIcon
+                          className="icon-modal"
+                          icon={faGithub}
+                          size="2x"
+                        />
+                      </a>
                       <span>{person.github}</span>
                     </div>
                   </div>

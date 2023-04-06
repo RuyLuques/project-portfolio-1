@@ -47,14 +47,13 @@
   padding: 0;
 }
 
-.links-footer .links {
+.links-footer .navbar-link {
   color: #fff;
   text-decoration: none;
-  font-size: 0.5em;
-  margin-bottom: 0.5rem;
+  font-size: 1em;
 }
 
-.links-footer .links:hover {
+.links-footer .navbar-link:hover {
   color: #ffc700;
 }
 
