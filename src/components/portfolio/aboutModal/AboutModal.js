@@ -13,6 +13,14 @@ const AboutModal = ({ show, handleClose, children }) => {
   const iconsRef = useRef([]);
   const [informations, setInformations] = useState([]);
 
+  const modalRef = useRef();
+
+  const handleCloseModal = (event) => {
+    if (modalRef.current === event.target) {
+      handleClose();
+    }
+  };
+
   const handleMouseOut = (index) => {
     if (iconsRef.current[index]) {
       iconsRef.current[index].classList.remove("hover");
@@ -45,6 +53,8 @@ const AboutModal = ({ show, handleClose, children }) => {
         className={`modal ${show ? "show" : ""}`}
         tabIndex="-1"
         role="dialog"
+        onClick={handleCloseModal}
+        ref={modalRef}
       >
         <div className="modal-dialog modal-dialog-centered" role="document">
           <div className="modal-content">
@@ -65,13 +75,18 @@ const AboutModal = ({ show, handleClose, children }) => {
                     key={index}
                   >
                     <div className="icon-container">
-                      <FontAwesomeIcon className="icon-modal" icon={faUser} />
+                      <FontAwesomeIcon
+                        className="icon-modal"
+                        icon={faUser}
+                        size="2x"
+                      />
                       <span>{person.name}</span>
                     </div>
                     <div className="icon-container">
                       <FontAwesomeIcon
                         className="icon-modal"
                         icon={faMapMarkerAlt}
+                        size="2x"
                       />
                       <span>{person.address}</span>
                     </div>
@@ -79,6 +94,7 @@ const AboutModal = ({ show, handleClose, children }) => {
                       <FontAwesomeIcon
                         className="icon-modal"
                         icon={faEnvelope}
+                        size="2x"
                       />
                       <span>{person.email}</span>
                     </div>
@@ -86,11 +102,16 @@ const AboutModal = ({ show, handleClose, children }) => {
                       <FontAwesomeIcon
                         className="icon-modal"
                         icon={faLinkedin}
+                        size="2x"
                       />
                       <span>{person.linkedin}</span>
                     </div>
                     <div className="icon-container">
-                      <FontAwesomeIcon className="icon-modal" icon={faGithub} />
+                      <FontAwesomeIcon
+                        className="icon-modal"
+                        icon={faGithub}
+                        size="2x"
+                      />
                       <span>{person.github}</span>
                     </div>
                   </div>
