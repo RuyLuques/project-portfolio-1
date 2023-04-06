@@ -5,18 +5,7 @@ import "./styles/Evaluations.css";
 import "../styles/Ecommerce.css";
 
 const Evaluations = () => {
-  const [items, setItems] = useState([]);
   const [stars, setStars] = useState([...Array(5)].map(() => false));
-
-  const handleEvaluation = (id, evaluation) => {
-    const newItems = items.map((item) => {
-      if (item.id === id) {
-        return { ...item, evaluation };
-      }
-      return item;
-    });
-    setItems(newItems);
-  };
 
   return (
     <>

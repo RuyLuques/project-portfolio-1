@@ -1,7 +1,5 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
-import { faLaptopCode } from "@fortawesome/free-solid-svg-icons";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Error from "../../components/error/404/Error";
 import "../../components/portfolio/styles/Portfolio.css";
 import "./styles/Projects.css";

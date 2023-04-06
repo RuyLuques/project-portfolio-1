@@ -9,7 +9,7 @@ import "./style/Education.css";
 const Education = () => {
   const [education, setEducation] = useState([]);
   const [error, setError] = useState(false);
-  const [showIndex, setShowIndex] = useState(-1); // add state for displaying info of specific item
+  const [showIndex, setShowIndex] = useState(-1); 
 
   useEffect(() => {
     axios
