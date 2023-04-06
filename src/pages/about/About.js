@@ -42,7 +42,7 @@ const About = () => {
               />
             </div>
             <div className="content-about-title">
-              <h1 className="about-title">I'am Ruy Luques</h1>
+              <h1 className="about-title">I'm Ruy Luques</h1>
               <h2 className="about-title">Developer Frontend</h2>
               <FontAwesomeIcon
                 className="icon-about"
