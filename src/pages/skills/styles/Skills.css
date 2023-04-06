@@ -73,7 +73,7 @@
 
 .card-back p {
   color: #28054b;
-  font-size: 1rem;
+  font-size: 1em;
   font-weight: bold;
   padding: 2rem;
 }
@@ -121,7 +121,7 @@
   }
 
   .card-back p {
-    font-size: 1rem;
+    font-size: 1em;
   }
 }
 
@@ -130,7 +130,7 @@
     touch-action: manipulation;
   }
   .card-back p {
-    font-size: 0.8rem;
+    font-size: 0.8em;
   }
   .card-skills {
     height: 15vh;
@@ -140,7 +140,7 @@
     height: 30px;
   }
   .click-indicator {
-    font-size: 0.8rem;
+    font-size: 0.8em;
     margin-top: 5px;
   }
 }

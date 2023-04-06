@@ -53,12 +53,12 @@
 
 .content-about-title h1 {
   color: #28054b;
-  font-size: 32px;
+  font-size: 2em;
 }
 
 .content-about-title h2 {
   color: #28054b;
-  font-size: 24px;
+  font-size: 1em;
 }
 
 .about-title {
@@ -109,10 +109,10 @@
   }
 
   .content-about-title h1 {
-    font-size: 24px;
+    font-size: 1em;
   }
 
   .content-about-title h2 {
-    font-size: 20px;
+    font-size: 1em;
   }
 }

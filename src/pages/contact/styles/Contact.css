@@ -25,7 +25,7 @@ form {
 
 .container-form label {
   color: #28054b;
-  font-size: 1.2rem;
+  font-size: 1.2em;
   font-weight: bold;
 }
 
@@ -33,7 +33,7 @@ input[type="text"],
 input[type="email"] {
   background-color: #28054b3a;
   color: #28054b;
-  font-size: 1rem;
+  font-size: 1em;
   padding: 1rem;
   border-radius: 5px;
 }
@@ -42,7 +42,7 @@ textarea {
   background-color: #28054b3a;
   color: #28054b;
   height: 20vh;
-  font-size: 1rem;
+  font-size: 1em;
   padding: 1rem;
   border-radius: 5px;
 }
@@ -53,7 +53,7 @@ textarea {
   width: 100%;
   max-width: 100%;
   min-height: 5vh;
-  font-size: 1rem;
+  font-size: 1em;
   margin: 0 auto;
   cursor: pointer;
   border: none;

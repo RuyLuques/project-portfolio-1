@@ -30,7 +30,7 @@ body {
   color: #28054b;
   align-items: center;
   text-align: center;
-  font-size: 2.5rem;
+  font-size: 2.5em;
   padding: 5rem;
 }
 
@@ -64,6 +64,6 @@ p {
 
 @media screen and (max-width: 768px) {
   .content-title {
-    font-size: 2rem;
+    font-size: 2em;
   }
 }

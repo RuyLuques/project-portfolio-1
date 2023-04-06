@@ -45,13 +45,13 @@
 .card-experience h2 {
   color: #28054b;
   margin-bottom: 10px;
-  font-size: 1.5rem;
+  font-size: 1.5em;
   padding: 1rem;
 }
 
 .card-experience p {
   color: #28054b;
-  font-size: 1rem;
+  font-size: 1em;
   line-height: 1.5;
 }
 
@@ -73,15 +73,15 @@
   }
 
   .card-experience h2 {
-    font-size: 1.2rem;
+    font-size: 1.2em;
   }
 
   .card-experience p {
-    font-size: 0.9rem;
+    font-size: 0.9em;
   }
 
   .icon-experience {
-    font-size: 2rem;
+    font-size: 2em;
   }
 }
 
@@ -89,18 +89,18 @@
   .content-experience {
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     gap: 5rem;
-    padding: 0.5rem;
+    padding: 0.5em;
   }
 
   .card-experience h2 {
-    font-size: 1rem;
+    font-size: 1em;
   }
 
   .card-experience p {
-    font-size: 0.8rem;
+    font-size: 0.8em;
   }
 
   .icon-experience {
-    font-size: 1.5rem;
+    font-size: 1.5em;
   }
 }

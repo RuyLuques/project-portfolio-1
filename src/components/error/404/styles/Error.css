@@ -6,12 +6,12 @@
 }
 .container-error h2 {
   color: #fff;
-  font-size: 3rem;
+  font-size: 2em;
 }
 
 .container-error p {
   color: #fff;
-  font-size: 2rem;
+  font-size: 1em;
 }
 
 .content-error {

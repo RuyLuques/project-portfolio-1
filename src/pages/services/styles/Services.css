@@ -20,7 +20,7 @@
   color: #fff;
   align-items: center;
   text-align: center;
-  font-size: 2.5rem;
+  font-size: 2.5em;
   padding: 2rem;
 }
 
@@ -44,7 +44,7 @@
   color: #28054b;
   margin: 0;
   padding: 0.2rem;
-  font-size: 1.5rem;
+  font-size: 1.5em;
   font-weight: bold;
   text-align: justify;
 }
@@ -53,7 +53,7 @@
   color: #28054b;
   margin: 0;
   padding: 0.2rem;
-  font-size: 1rem;
+  font-size: 1em;
   font-weight: bold;
   text-align: justify;
 }
@@ -68,7 +68,7 @@
 .card-services .informations span {
   background-color: #ffc700;
   width: 40%;
-  font-size: 1rem;
+  font-size: 1em;
   padding: 1rem;
   font-weight: bold;
   text-align: center;
@@ -102,30 +102,30 @@
   }
 
   .card-services h3 {
-    font-size: 1.5rem;
+    font-size: 1.5em;
     padding: 1rem;
   }
 
   .card-services p {
-    font-size: 1.2rem;
+    font-size: 1.2em;
     padding: 1rem;
   }
 
   .card-services .informations {
     width: 100%;
     height: 25%;
-    font-size: 1.2rem;
+    font-size: 1.2em;
     padding: 2rem;
   }
 
   .card-services .informations span {
     width: 50%;
-    font-size: 0.8rem;
+    font-size: 0.8em;
     padding: 1rem;
   }
 
   .content-title-services {
-    font-size: 1.5rem;
+    font-size: 1.5em;
     padding: 1rem 0;
   }
 }
@@ -147,30 +147,30 @@
   }
 
   .card-services h3 {
-    font-size: 3rem;
+    font-size: 2em;
     padding: 1rem;
   }
 
   .card-services p {
-    font-size: 2rem;
+    font-size: 2em;
     padding: 1rem;
   }
 
   .card-services .informations {
     width: 100%;
     height: 10%;
-    font-size: 1.5rem;
+    font-size: 1.5em;
     padding: 2rem;
   }
 
   .card-services .informations span {
     width: 50%;
-    font-size: 1rem;
+    font-size: 1em;
     padding: 1rem;
   }
 
   .content-title-services {
-    font-size: 1.5rem;
+    font-size: 1.5em;
     padding: 1rem 0;
   }
 }
