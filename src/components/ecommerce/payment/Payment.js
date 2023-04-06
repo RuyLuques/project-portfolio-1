@@ -28,7 +28,7 @@ const Payment = () => {
             </div>
           ))}
           <p>
-            <strong>Total price: {totalPrice}</strong>
+            <strong>Total: {totalPrice}</strong>
           </p>
         </div>
       </div>

@@ -8,18 +8,24 @@
 
 .content-freight {
   width: 100%;
-  padding: 1rem;
+  padding: 0;
   box-shadow: 0px 1px 1px #28054b;
 }
 
 .content-freight label {
   color: #28054b;
   font-size: 1rem;
+  padding: 1rem;
   font-weight: bold;
 }
 
 .content-freight input {
   background-color: #28054b14;
+  width: 15%;
+  height: 10%;
+  margin: 0;
+  border-radius: 2px;
+  box-shadow: 0px 1px 5px #28054b;
 }
 
 @media screen and (max-width: 768px) {
