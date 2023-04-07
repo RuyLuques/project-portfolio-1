@@ -1,6 +1,8 @@
 <h1>Olá, bem vindo(a) ao código do meu portfólio!</h1>
  <p>
 Desenvolvi esse projeto para desmonstrar minhas habilidades técnicas para conseguir me recolocar no mercado de trabalho (#sofrirLayoff). E uma maneira de chamar   atenção dos recrutadores foi desenvolver esse projeto cuidadosamente e com muito amor... :)
+ 
+Este é um projeto nível júnior, se você for procurar problemas irá certamente encontrá-los, mas continuarei a desenvolver melhorias. Comecei a testar com o JEST, e em breve irei atualizar o código.
  </p>
 
 <h2>Tecnologias</h2>
